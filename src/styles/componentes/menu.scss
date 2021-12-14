@@ -1,0 +1,16 @@
+.menuWrapper {
+  > nav {
+    ul {
+      list-style-type: none;
+      display: flex;
+      li {
+        padding: 5px 5px;
+        &:hover {
+          background-color: #f58633;
+          color: #fff;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+}

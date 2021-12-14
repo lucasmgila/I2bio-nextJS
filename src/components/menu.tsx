@@ -1,13 +1,18 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Menu() {
   return (
-    <div>
-      
+    <div className="menuWrapper">
       <nav>
         <ul>
-          <Link href="/"><a><li><Image src='/assets/logo.png' width={194} height={133}/></li></a></Link>
+          <li>
+            <Link href="/">
+              <a>
+                <Image src="/assets/logo.png" width={194} height={133} />
+              </a>
+            </Link>
+          </li>
           <li>O instituto</li>
           <li>Quem somos</li>
           <li>Eventos</li>
@@ -21,10 +26,9 @@ export default function Menu() {
           <li>Missão</li>
           <li>Na mídia</li>
           <li></li>
-          {/* */ }
+          {/* */}
         </ul>
-      </nav>  
-        
+      </nav>
     </div>
   )
 }
